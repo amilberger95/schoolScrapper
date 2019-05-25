@@ -1,0 +1,2 @@
+USA_NEWS_SCHOOL_URL = 'https://www.usnews.com/best-graduate-schools/search?program=top-business-schools&name=' # change link for different types of schools e.g. grad school, undergrad, business, medical etc 
+SCHOOL_TRACK = 'Business' #change depending on the program, for validation purpuses 
