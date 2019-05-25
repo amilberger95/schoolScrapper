@@ -23,7 +23,7 @@ class usaNewsSchoolsStats(object):
 
 
 
-    def getUsaNewsMbaSchoolsHTML(self):
+    def getUsaNewsSchoolsHTML(self):
         url = self.url
         r = requests.get(url,headers=self.headers)
         soup = BeautifulSoup(r.text, features="lxml")
@@ -102,7 +102,7 @@ class usaNewsSchoolsStats(object):
         if self.moreData:
             mbaHtml = self.getContentsWhenPageScrolls()
         else:
-            mbaHtml = self.getUsaNewsMbaSchoolsHTML()
+            mbaHtml = self.getUsaNewsSchoolsHTML()
         schoolLinks = self.getTopSchoolLinks(mbaHtml)
         schoolStatLst = self.getSchoolStats(schoolLinks)
 
